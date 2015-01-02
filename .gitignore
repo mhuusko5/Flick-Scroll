@@ -1,0 +1,13 @@
+.DS_Store
+
+*.xcuserstate
+*.xccheckout
+*.xcscheme
+*.xcsettings
+
+xcuserdata/
+
+Pods/
+Podfile.lock
+
+Packages/
