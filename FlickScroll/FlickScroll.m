@@ -49,12 +49,14 @@ const void* scrollTouchVelocity = &scrollTouchVelocity;
             CGPoint contentOffset = self.contentOffset;
             
             if (velocity.y > 0) {
-                contentOffset.y += (scrollLocation.y - contentOffset.y - self.frame.size.height / 7);
-                
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0), dispatch_get_main_queue(), ^{
-                    [self setContentOffset:contentOffset animated:YES];
-                });
+                contentOffset.y = scrollLocation.y - self.frame.size.height / 7;
+            } else {
+                contentOffset.y -= self.frame.size.height - (scrollLocation.y - contentOffset.y) - self.frame.size.height / 10;
             }
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0), dispatch_get_main_queue(), ^{
+                [self setContentOffset:contentOffset animated:YES];
+            });
         }
     }
     
