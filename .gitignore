@@ -7,7 +7,6 @@
 
 xcuserdata/
 
-Pods/
-Podfile.lock
-
+*.dylib
 Packages/
+LatestBuild

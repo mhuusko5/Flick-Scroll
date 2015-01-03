@@ -1,0 +1,11 @@
+Package: com.mhuusko5.FlickScroll
+Name: Flick Scroll
+Version: 0.9-1
+Description: Flick in a scrollable area in iOS to scroll to that point.
+Section: System
+Depends: firmware (>= 7.0), mobilesubstrate
+Priority: optional
+Architecture: iphoneos-arm
+Author: Mathew Huusko V <mhuusko5.seller@gmail.com>
+Homepage: http://mhuusko5.com/
+Maintainer: Mathew Huusko V <mhuusko5.seller@gmail.com>

@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0E9E4E51A5751440096A1FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E9E4E41A5751440096A1FA /* Foundation.framework */; };
+		D0E9E4E71A5751440096A1FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E9E4E61A5751440096A1FA /* UIKit.framework */; };
+		D0E9E4F61A5751440096A1FA /* FlickScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E9E4F51A5751440096A1FA /* FlickScroll.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0E9E4E11A5751440096A1FA /* FlickScroll.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = FlickScroll.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E9E4E41A5751440096A1FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0E9E4E61A5751440096A1FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0E9E4EC1A5751440096A1FA /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		D0E9E4EE1A5751440096A1FA /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		D0E9E4F21A5751440096A1FA /* FlickScroll.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FlickScroll.plist; path = Package/Library/PreferenceLoader/Preferences/FlickScroll.plist; sourceTree = "<group>"; };
+		D0E9E4F31A5751440096A1FA /* FlickScrollIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FlickScrollIcon.png; path = Package/Library/PreferenceLoader/Preferences/FlickScrollIcon.png; sourceTree = "<group>"; };
+		D0E9E4F41A5751440096A1FA /* FlickScrollIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FlickScrollIcon@2x.png"; path = "Package/Library/PreferenceLoader/Preferences/FlickScrollIcon@2x.png"; sourceTree = "<group>"; };
+		D0E9E4F51A5751440096A1FA /* FlickScroll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickScroll.m; sourceTree = "<group>"; };
+		D0E9E4F91A5751440096A1FA /* FlickScroll.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FlickScroll.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/FlickScroll.plist; sourceTree = "<group>"; };
+		D0E9E5051A5752EC0096A1FA /* FlickScrollIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FlickScrollIcon@3x.png"; path = "Package/Library/PreferenceLoader/Preferences/FlickScrollIcon@3x.png"; sourceTree = "<group>"; };
+		D0E9E52F1A5756CE0096A1FA /* UIScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollView.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0E9E4DD1A5751440096A1FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E9E4E51A5751440096A1FA /* Foundation.framework in Frameworks */,
+				D0E9E4E71A5751440096A1FA /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0E9E4D71A5751440096A1FA = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4E81A5751440096A1FA /* FlickScroll */,
+				D0E9E4E31A5751440096A1FA /* Frameworks */,
+				D0E9E4E21A5751440096A1FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0E9E4E21A5751440096A1FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4E11A5751440096A1FA /* FlickScroll.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0E9E4E31A5751440096A1FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4E41A5751440096A1FA /* Foundation.framework */,
+				D0E9E4E61A5751440096A1FA /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0E9E4E81A5751440096A1FA /* FlickScroll */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4F51A5751440096A1FA /* FlickScroll.m */,
+				D0E9E52F1A5756CE0096A1FA /* UIScrollView.h */,
+				D0E9E4E91A5751440096A1FA /* Package */,
+				D0E9E4ED1A5751440096A1FA /* Supporting Files */,
+			);
+			path = FlickScroll;
+			sourceTree = "<group>";
+		};
+		D0E9E4E91A5751440096A1FA /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4EA1A5751440096A1FA /* DEBIAN */,
+				D0E9E4EF1A5751440096A1FA /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		D0E9E4EA1A5751440096A1FA /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4EC1A5751440096A1FA /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		D0E9E4ED1A5751440096A1FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4EE1A5751440096A1FA /* PackageVersion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0E9E4EF1A5751440096A1FA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4F01A5751440096A1FA /* PreferenceLoader */,
+				D0E9E4F71A5751440096A1FA /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		D0E9E4F01A5751440096A1FA /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4F11A5751440096A1FA /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		D0E9E4F11A5751440096A1FA /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4F21A5751440096A1FA /* FlickScroll.plist */,
+				D0E9E4F31A5751440096A1FA /* FlickScrollIcon.png */,
+				D0E9E4F41A5751440096A1FA /* FlickScrollIcon@2x.png */,
+				D0E9E5051A5752EC0096A1FA /* FlickScrollIcon@3x.png */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		D0E9E4F71A5751440096A1FA /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4F81A5751440096A1FA /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		D0E9E4F81A5751440096A1FA /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				D0E9E4F91A5751440096A1FA /* FlickScroll.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D0E9E4DE1A5751440096A1FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D0E9E4E01A5751440096A1FA /* FlickScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0E9E5021A5751440096A1FA /* Build configuration list for PBXNativeTarget "FlickScroll" */;
+			buildPhases = (
+				D0E9E4DC1A5751440096A1FA /* Sources */,
+				D0E9E4DD1A5751440096A1FA /* Frameworks */,
+				D0E9E4DE1A5751440096A1FA /* Headers */,
+				D0E9E4DF1A5751440096A1FA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickScroll;
+			productName = FlickScroll;
+			productReference = D0E9E4E11A5751440096A1FA /* FlickScroll.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0E9E4D81A5751440096A1FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FS;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mathew Huusko V";
+				TargetAttributes = {
+					D0E9E4E01A5751440096A1FA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = D0E9E4DB1A5751440096A1FA /* Build configuration list for PBXProject "FlickScroll" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0E9E4D71A5751440096A1FA;
+			productRefGroup = D0E9E4E21A5751440096A1FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0E9E4E01A5751440096A1FA /* FlickScroll */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0E9E4DF1A5751440096A1FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0E9E4DC1A5751440096A1FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E9E4F61A5751440096A1FA /* FlickScroll.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0E9E5001A5751440096A1FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		D0E9E5011A5751440096A1FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		D0E9E5031A5751440096A1FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.133;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		D0E9E5041A5751440096A1FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 192.168.1.133;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0E9E4DB1A5751440096A1FA /* Build configuration list for PBXProject "FlickScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E9E5001A5751440096A1FA /* Debug */,
+				D0E9E5011A5751440096A1FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0E9E5021A5751440096A1FA /* Build configuration list for PBXNativeTarget "FlickScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0E9E5031A5751440096A1FA /* Debug */,
+				D0E9E5041A5751440096A1FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0E9E4D81A5751440096A1FA /* Project object */;
+}
